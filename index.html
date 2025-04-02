@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Neo Mokoele - Tech Portfolio</title>
+  <style>
+    /* General styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: url('https://images.pexels.com/photos/701184/pexels-photo-701184.jpeg') no-repeat center center/cover;
+      background-attachment: fixed;
+      padding-top: 50px;
+      scroll-behavior: smooth; /* Smooth scrolling */
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px 0;
+      z-index: 1000;
+    }
+
+    nav .logo h1 {
+      color: #fff;
+      text-align: center;
+      font-size: 2.5rem;
+    }
+
+    nav .nav-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    nav .nav-links li {
+      list-style: none;
+      margin: 0 15px;
+    }
+
+    nav .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    nav .nav-links a:hover {
+      color: #ff7f50;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 0;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    header h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #ff7f50;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards 0.5s;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      color: #fff;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards 0.7s;
+    }
+
+    .section {
+      padding: 60px 0;
+      color: #333;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeInUp 1s forwards;
+    }
+
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #ff7f50;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      font-size: 1.2rem;
+      margin: 5px 0;
+    }
+
+    .cv-button {
+      background-color: #ff7f50;
+      color: #fff;
+      padding: 12px 25px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      margin-top: 20px;
+      display: inline-block;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .cv-button:hover {
+      background-color: #e56b40;
+      transform: scale(1.05);
+    }
+
+    .project-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .project {
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .project a {
+      text-decoration: none;
+      font-size: 1.1rem;
+      color: #ff7f50;
+      transition: color 0.3s;
+    }
+
+    .project a:hover {
+      color: #e56b40;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    footer p {
+      font-size: 1rem;
+    }
+
+    /* Keyframes for animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Media queries */
+    @media only screen and (max-width: 768px) {
+      nav .nav-links {
+        flex-direction: column;
+      }
+
+      header h2 {
+        font-size: 2.5rem;
+      }
+
+      header p {
+        font-size: 1.2rem;
+      }
+
+      .section h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <div class="logo">
+        <h1>Neo Mokoele</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <h2>Welcome to My Portfolio</h2>
+      <p>Empowering the Future of Tech with Innovation and Expertise</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm Neo Mokoele, a passionate software developer and data scientist with a keen interest in technology, problem-solving, and continuous learning. 
+        I specialize in developing innovative solutions that streamline processes and improve operational efficiency.
+        With a background in Tourism Management and training in Data Science, I’m eager to build a successful career where I can contribute to impactful projects and grow in the tech industry.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Services</h2>
+      <ul>
+        <li><strong>Software Development:</strong> I offer custom software development services, specializing in Python, SQL, and web technologies to create efficient, scalable, and user-friendly solutions.</li>
+        <li><strong>Data Science & Analytics:</strong> My expertise in data science allows me to help businesses extract actionable insights from complex data, supporting informed decision-making.</li>
+        <li><strong>Quality Assurance:</strong> With my background in quality assurance, I can help ensure the optimal performance and quality of software solutions through testing and process optimization.</li>
+        <li><strong>Consulting:</strong> I provide consulting services to help companies leverage technology to streamline their processes and improve efficiency.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Programming Languages:</strong> Python, SQL, HTML, CSS, JavaScript</li>
+        <li><strong>Data Analysis:</strong> MySQL, Pandas, NumPy, Matplotlib</li>
+        <li><strong>Web Development:</strong> HTML5, CSS3, JavaScript, React</li>
+        <li><strong>Software Tools:</strong> Git, GitHub, Jupyter Notebooks, Visual Studio Code</li>
+        <li><strong>Other Skills:</strong> Data Visualization, Problem Solving, Continuous Learning</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>ALX Africa (2025–2026):</strong> Data Science (15-month course)</li>
+        <li><strong>Power Learn Project Academy (2025):</strong> Software Development (16-week scholarship)</li>
+        <li><strong>Vaal University of Technology (2020):</strong> National Diploma in Tourism Management</li>
+        <li><strong>Alison (2024):</strong> Diploma in MySQL & Statistics for Data Analysis, Certificate in Quality Management Systems</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project"><a href="https://github.com/Neo21702/My-calculator.git" target="_blank">Python Calculator</a></div>
+        <div class="project"><a href="https://github.com/PLP-Database-Design/wk-1-Neo21702.git" target="_blank">SQL Database Week 1</a></div>
+        <div class="project"><a href="https://github.com/Neo21702/-Simple-Quiz-Game-.git" target="_blank">Quiz Game</a></div>
+        <div class="project"><a href="https://github.com/PLP-WebTechnologies/feb-2025-advanced-html-Neo21702.git" target="_blank">Advanced HTML (Week 1)</a></div>
+        <div class="project"><a href="https://github.com/PLP-Database-Design/wk-2a-Neo21702.git" target="_blank">SQL Database Week 2</a></div>
+        <div class="project"><a href="https://github.com/Neo21702/personalised-greeting-app.git" target="_blank">Personalised Greeting App</a></div>
+        <div class="project"><a href="https://github.com/Neo21702/Random-Joke-Generator.git" target="_blank">Random Joke Generator</a></div>
+        <div class="project"><a href="https://github.com/Neo21702/contol_flow.py.git" target="_blank">Control Flow (Python)</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+      <p>
+        <strong>Quality Assurance Specialist</strong> at Alteram Solutions (2023–2025)
+        <br>
+        As a Quality Assurance Specialist, I was responsible for ensuring that the company adhered to high standards of quality in its operations. I worked closely with teams to identify areas for improvement, conducted audits, and provided recommendations to enhance performance and efficiency. My role involved using data analysis and systematic methods to improve processes, which is a key aspect of my transition into a career in tech. I contributed by identifying inefficiencies and suggesting automation tools that could streamline workflows, which laid the foundation for my shift toward software development and data science.
+      </p>
+    </div>
+  </section>
+
+  <!-- Download CV Section -->
+  <section id="cv" class="section">
+    <div class="container">
+      <h2>Download My CV</h2>
+      <a href="https://drive.google.com/file/d/1RkksHZthHzWhoCaCxd1NgEntW7HzKyIw/view?usp=drive_link" class="cv-button" target="_blank" download>Download CV</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>If you would like to get in touch, feel free to reach out via the following channels:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:neo217024599@gmail.com">neo217024599@gmail.com</a></li>
+        <li><strong>Phone:</strong> <a href="tel:+27681771008">+27 68 177 1008</a></li>
+        <li><strong>WhatsApp:</strong> <a href="https://wa.me/27742492233" target="_blank">+27 74 249 2233</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">LinkedIn Profile</a></li>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/yourinstagram" target="_blank">Instagram</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Neo Mokoele. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Simple JavaScript to animate sections as they come into view
+    window.addEventListener('scroll', function() {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+          section.style.animation = 'fadeInUp 1s forwards';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
