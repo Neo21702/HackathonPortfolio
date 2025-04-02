@@ -73,7 +73,7 @@ You can download my CV using the link below:
 
 [Download CV](https://drive.google.com/file/d/1RkksHZthHzWhoCaCxd1NgEntW7HzKyIw/view?usp=drive_link)
 
- (click the index.html and then download raw link to paste on url to showcase the portfolio)
+https://github.com/Neo21702/HackathonPortfolio.git (click the index.html and then download raw link to paste on url to showcase the portfolio)
 
 ## Contact
 
