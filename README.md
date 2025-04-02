@@ -72,8 +72,8 @@ In this role, I ensured that the company adhered to high standards of quality in
 You can download my CV using the link below:
 
 [Download CV](https://drive.google.com/file/d/1RkksHZthHzWhoCaCxd1NgEntW7HzKyIw/view?usp=drive_link)
-https://Neo21702.github.io/HackathonPortfolio/
- (click the index.html and then download raw link to paste on url to showcase the portfolio)
+
+https://Neo21702.github.io/HackathonPortfolio/ (click the index.html and then download raw link to paste on url to showcase the portfolio)
 
 ## Contact
 
