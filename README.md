@@ -67,13 +67,13 @@ In this role, I ensured that the company adhered to high standards of quality in
 - **Diploma in MySQL and Statistics for Data Analysis** at Alison (2024)
 - **Certificate in Quality Management Systems** at Alison (2024)
 
-## Download CV and link to my portfolio
+## Download CV and link to my live demo portfolio
 
 You can download my CV using the link below:
 
 [Download CV](https://drive.google.com/file/d/1RkksHZthHzWhoCaCxd1NgEntW7HzKyIw/view?usp=drive_link)
 
-https://github.com/Neo21702/HackathonPortfolio.git (click the index.html and then download raw file to paste on url to showcase the portfolio)
+https://neomokoeleportfolio.netlify.app/ (click the link to showcase the live demo portfolio)
 
 ## Contact
 
